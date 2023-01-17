@@ -6,7 +6,7 @@ export const socketErrorHandler = (handler: any) => {
 	const handleError = (err: any) => {
 		if (err.message === 'No record of this user being active'){
 			void err;
-			console.log('never online');
+			// console.log('never online');
 		} else {
 			console.error('please handle me', err);
 		}
