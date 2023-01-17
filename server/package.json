@@ -7,7 +7,7 @@
 		"start": "NODE_ENV=production ts-node src/index.ts",
 		"dev": "NODE_ENV=development ts-node-dev src/index.ts",
 		"test": "NODE_ENV=test jest --verbose --runInBand --forceExit",
-		"build": "npm install && npm run migrate && npm run populate && npm run populate:likes",		
+		"build": "npm install && npm run populate && npm run populate:likes",		
 		"connect-db": "psql postgresql://localhost:5432/matcha -U postgres",
 		"connect-db:test": "psql postgresql://localhost:5433/matcha-test -U postgres",
 		"migration:create": "node node_modules/db-migrate/bin/db-migrate create -e local",

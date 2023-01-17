@@ -6,7 +6,8 @@ const pool = new Pool({
 	host: 'dpg-cf39hthgp3jl0q3k9cgg-a.frankfurt-postgres.render.com',
 	database: DB_NAME,
 	password: DB_PASS,
-	port: DB_PORT
+	port: DB_PORT,
+	ssl: true
 });
 
 export default pool;
