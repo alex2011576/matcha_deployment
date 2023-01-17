@@ -8,16 +8,16 @@
 		"dev": "NODE_ENV=development ts-node-dev src/index.ts",
 		"test": "NODE_ENV=test jest --verbose --runInBand --forceExit",
 		"build": "rm -rf build && npm install && npm run migrate && npm run populate && npm run populate:likes",		
-		"connect-db": "psql postgresql://localhost:5432/matcha -U postgres",
-		"connect-db:test": "psql postgresql://localhost:5433/matcha-test -U postgres",
+		"connect-db": "psql postgres://matcha_user:ByCLHfa8wHg7Oc5DJ65bKhn1YksSmU1f@dpg-cf39hthgp3jl0q3k9cgg-a.frankfurt-postgres.render.com/matcha",
+		"connect-db:test": "psql postgres://matcha_user:ByCLHfa8wHg7Oc5DJ65bKhn1YksSmU1f@dpg-cf39hthgp3jl0q3k9cgg-a.frankfurt-postgres.render.com/matcha",
 		"migration:create": "node node_modules/db-migrate/bin/db-migrate create -e local",
 		"migrate": "db-migrate up -e local",
 		"migrate:test": "db-migrate up -e test",
 		"prettier": "prettier --config .prettierrc '**/*.ts' --write",
 		"lint": "eslint --ext .ts .",
 		"tsc": "tsc",
-		"populate": "NODE_ENV=development ts-node-dev src/populateUsers.ts",
-		"populate:likes": "NODE_ENV=development ts-node-dev src/populateLikes.ts"
+		"populate": "ts-node-dev src/populateUsers.ts",
+		"populate:likes": "ts-node-dev src/populateLikes.ts"
 	},
 	"devDependencies": {
 		"@faker-js/faker": "^7.6.0",

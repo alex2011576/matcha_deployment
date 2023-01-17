@@ -17,5 +17,11 @@
 		"port": { "ENV": "DB_PORT_TEST" },
 		"schema": "public"
 	},
-	"sql-file": true
+	"sql-file": true,
+	"ssl": true,
+	"extra": {
+		"ssl": {
+		  "rejectUnauthorized": false
+		}
+	}
 }
