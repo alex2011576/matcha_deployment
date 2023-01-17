@@ -80,7 +80,7 @@ const NotificationItem = ({
 	return (
 		<Box
 			sx={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'center' }}
-			fontSize={{ xs: 14, sm: 16, md: 16 }}
+			fontSize={{ xs: 10, sm: 16, md: 16 }}
 		>
 			<Avatar
 				alt={`Avatar of user ${NotificationData.username}`}
