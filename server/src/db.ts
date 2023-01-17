@@ -1,13 +1,12 @@
 import { Pool } from 'pg';
-import { DB_PORT, DB_NAME, DB_PASS } from './utils/config';
+import { DB_PORT, DB_NAME } from './utils/config';
 
 const pool = new Pool({
-	user: 'matcha_user',
-	host: 'dpg-cf39hthgp3jl0q3k9cgg-a.frankfurt-postgres.render.com',
+	user: process.env.DB_USER,
+	host: process.env.DB_HOST,
 	database: DB_NAME,
-	password: DB_PASS,
-	port: DB_PORT,
-	ssl: true
+	password: process.env.DB_PASSWORD,
+	port: DB_PORT
 });
 
 export default pool;
