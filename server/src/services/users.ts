@@ -49,7 +49,7 @@ export const sendActivationCode = (user: User): void => {
 		'Activation code for Matcha-account',
 		`<h1>Hi and thanks for signing up!</h1>
 			<p>Please visit the link to activate your account here:</p>
-			<a href='http://localhost:3000/login?activate=${user.activationCode}'>Link</a>
+			<a href='https://matcha-client.onrender.com/login?activate=${user.activationCode}'>Link</a>
 			<p> See you at Matcha! <3 </p>`
 	);
 };
@@ -96,7 +96,7 @@ export const sendResetPasswordLink = (user: User, newResetRequset: PasswordReset
 		'Password reset link for Matcha-account',
 		`<h1>Hi, forgot your password? No problem! !</h1>
 			<p>Visit the link below to reset your password:</p>
-			<a href='http://localhost:3000/forgot_password?reset=${newResetRequset.token}'>Reset password here</a>
+			<a href='https://matcha-client.onrender.com/forgot_password?reset=${newResetRequset.token}'>Reset password here</a>
 			<p>Link will be active until ${newResetRequset.expiresAt}.</p>
 			<p>Ignore this message if you haven't requested password reset.</p>
 
@@ -147,7 +147,7 @@ export const mailEmailUpdateLink = (email: User['email'], newUpdateRequest: Emai
 		'Confirm email reset for Matcha-account',
 		`<h1>Hi, here you can confirm email reset!</h1>
 			<p>Visit the link below to reset your email:</p>
-			<a href='http://localhost:3000/update_email?update=${newUpdateRequest.token}'>Reset email here</a>
+			<a href='https://matcha-client.onrender.com/update_email?update=${newUpdateRequest.token}'>Reset email here</a>
 			<p>Link will be active until ${newUpdateRequest.expiresAt}.</p>
 			<p>Ignore this message if you haven't requested email reset.</p>
 

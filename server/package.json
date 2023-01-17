@@ -2,7 +2,7 @@
 	"name": "matcha",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "index.ts",
 	"scripts": {
 		"start": "NODE_ENV=production ts-node src/index.ts",
 		"dev": "NODE_ENV=development ts-node-dev src/index.ts",
