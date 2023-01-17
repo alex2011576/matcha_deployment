@@ -1,1 +1,1 @@
-export const apiBaseUrl = 'https://matcha-server-ilona-aleksei.onrender.com';
+export const apiBaseUrl = 'https://matcha-server-ilona-aleksei.onrender.com/api';
