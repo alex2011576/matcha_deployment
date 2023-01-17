@@ -1,4 +1,4 @@
-# Matcha
+# <a href="https://matcha-client.onrender.com/">Matcha</a>
   
 Our workflow, current TO-DOs, project subject and current state can be found here:  
 https://trello.com/b/pNoT2ZPs/matcha-todos
@@ -25,8 +25,9 @@ Frontend:
 
 We're also taking a TDD approach with Jest on a server side.
   
-Team members: [Ilona](https://github.com/fglsn) & [Alexei](https://github.com/alex2011576).
-
+Team members: [Ilona](https://github.com/fglsn) & [Alexei](https://github.com/alex2011576).  
+  
+**Deployed <a href="https://matcha-client.onrender.com/">here</a>**
 ### Signup page ###  
 ![alt text](https://github.com/fglsn/matcha/blob/master/client/screenshots/1.png?raw=true)  
   
