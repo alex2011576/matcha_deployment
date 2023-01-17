@@ -81,8 +81,8 @@ export const OnlineIndicator = ({ user_id }: { user_id: string }) => {
 			Online
 		</div>
 	) : (
-		<Tooltip title={<>${lastActiveDate}</>} arrow placement="top">
-			<div className="round-green">{lastActive}</div>
+		<Tooltip title={<>{lastActiveDate}</>} arrow placement="top">
+			<div className="round-green">{<>{lastActive}</>}</div>
 		</Tooltip>
 	);
 };
