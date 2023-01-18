@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+import Landing from './components/LandingPage/LandingPage';
 import MatchSuggestions from './components/MatchSuggestions';
 import SignUpForm from './components/SignUpForm';
 import LoginForm from './components/LoginForm';
@@ -31,6 +32,7 @@ const MinWidthContainer = styled.div`
 	display: flex;
 	max-width: 100%;
 	min-width: 300px;
+	height: 100%;
 `;
 
 const StyledBox = styled(Box)`
@@ -86,7 +88,12 @@ const App = () => {
 							<StyledBox>
 								<AlertSnackBar />
 								<Routes>
-									<Route path="/" element={<MatchSuggestions />} />
+									<Route
+										path="/"
+										element={
+											loggedUser ? <MatchSuggestions /> : <Landing />
+										}
+									/>
 									<Route
 										path="/login"
 										element={
@@ -110,7 +117,10 @@ const App = () => {
 										}
 									/>
 									<Route path="/profile" element={<ProfileEditor />} />
-									<Route path="/profile/:id" element={<PublicProfilePage />} />
+									<Route
+										path="/profile/:id"
+										element={<PublicProfilePage />}
+									/>
 									<Route path="/update_email" element={<UpdateEmail />} />
 									<Route path="/visit_history" element={<VisitHistory />} />
 									<Route path="/likes" element={<Likes />} />
