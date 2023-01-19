@@ -5,7 +5,7 @@
 1. [Stack](#stack)
 2. [Restrictions and rules of the assignment ](#restrictions-and-rules-of-the-assignment)
 3. [How to run locally](#how-to-run-locally)
-4. [Features](#features)
+4. [Content](#сontent)
 
 ## Short description  
 A team project, implemented as a part of the Hive Helsinki coding school web-branch.  
