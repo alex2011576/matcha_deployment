@@ -67,7 +67,7 @@ export const getAuth = (): Auth => {
 // };
 
 export const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io(
-	'http://localhost:3001',
+	'https://matcha-server-ilona-aleksei.onrender.com',
 	{
 		autoConnect: false,
 		reconnection: true,

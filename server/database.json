@@ -1,21 +1,27 @@
 {
 	"local": {
 		"driver": "pg",
-		"user": "postgres",
-		"password": "postgres",
-		"host": "localhost",
-		"database": "matcha",
-		"port": "5432",
+		"user": { "ENV": "DB_USER" },
+		"password": { "ENV": "DB_PASSWORD" },
+		"host": { "ENV": "DB_HOST" },
+		"database": { "ENV": "DB_NAME" },
+		"port": { "ENV": "DB_PORT" },
 		"schema": "public"
 	},
 	"test": {
 		"driver": "pg",
-		"user": "postgres",
-		"password": "postgres",
-		"host": "localhost",
-		"database": "matcha-test",
-		"port": "5433",
+		"user": { "ENV": "DB_USER" },
+		"password": { "ENV": "DB_PASSWORD" },
+		"host": { "ENV": "DB_HOST" },
+		"database": { "ENV": "DB_NAME_TEST" },
+		"port": { "ENV": "DB_PORT_TEST" },
 		"schema": "public"
 	},
-	"sql-file": true
+	"sql-file": true,
+	"ssl": true,
+	"extra": {
+		"ssl": {
+		  "rejectUnauthorized": false
+		}
+	}
 }
