@@ -111,6 +111,9 @@ https://user-images.githubusercontent.com/40247953/213479175-6b1047aa-6513-4116-
 User can like or dislike user. Disliked user will be removed from the list right away and won't appear again in the search results.  
 Liked user will stay in the list until user desides to refresh or lave the page (in case of a match user can instantly see that match happened and go to chat)  
 It is possible to see all the pictures and bio in the carousel of each profile.  
+Remember about the fame rating? User gets 1 point per visit, 2 per like, -2 per dislike, -2 per block and +2 when block removed, -5 on a fake report.  
+On match user gets 2 point when matched with popular user (rating over 75), 0 with average user (25 to 75) and -2 when matched with very unpopular one (rating less than 25)  
+It is possible to report fake account. In this case reported user will be blocked without possibility to unblock. If someone gets more than 10 reports, his account is deactivated, session destroyed and he won't be able to use the service anymore.  
   
 4) **Public profile page** 
 User can consult public profile of other user and the notification will be sent to that user on the first visit.  
