@@ -14,7 +14,7 @@ A dating app allowing two potential lovers to meet, from the registration to the
 Application suggests potential matches based on age, location, common interests, rating and gender or sexual preferences.  
 User can sort and filter match suggestions, like, dislike or report profiles of other users, chat with those who liked back and be notified in real time about related activities.  
 
-Team members: [Ilona](https://github.com/fglsn) & [Alexei](https://github.com/alex2011576).  
+Team members: [Ilona](https://github.com/fglsn) & [Aleksei](https://github.com/alex2011576).  
   
 **Deployed <a href="https://matcha-client.onrender.com/">here</a>**  
   
@@ -23,9 +23,10 @@ Our workflow, current TO-DOs, project subject and state can be found <a href="ht
 
 Backend:
 - TypeScript
-- NodeJs
+- Node.Js (Express)
 - PostgreSQL
 - Jest
+- Socket.io  
 
 Frontend:
 - TypeScript
